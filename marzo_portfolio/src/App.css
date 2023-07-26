@@ -28,6 +28,54 @@
   color: #61dafb;
 }
 
+.Landing-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+}
+
+.Banner {
+  display: flex;
+  flex-direction: column;
+  height: 30%;
+  width: 100%;
+  background-color: #2e2cc2;
+  justify-content: center;
+  align-items: center;
+}
+
+.Showcase {
+  display: flex;
+  flex-direction: row;
+  height: 70%;
+  width: 100%;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.Portal {
+  display: flex;
+  flex-direction: column;
+  height: 40vh;
+  width: 20vw;
+  background-color: #e6eeee;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+
+.Banner-title {
+  font-size: 10vh;
+  color: white;
+  margin-bottom: 1px;
+}
+
+.Banner-subtitle {
+  font-size: 4vh;
+  color: white;
+  margin-top: 3px;
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
