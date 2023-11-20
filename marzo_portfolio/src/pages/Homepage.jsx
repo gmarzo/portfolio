@@ -1,7 +1,10 @@
 import * as React from "react";
 import "../App.css";
 
+
 const Homepage = () => {
+  const [clicked, setClicked] = React.useState(false)
+
   return (
     <div className="Landing-page">
       <div className="Banner">
@@ -16,8 +19,8 @@ const Homepage = () => {
         <div className="Portal">
           <p>Coding Projects</p>
         </div>
-        <div className="Portal">
-          <p>Something else</p>
+        <div className="Portal" onClick={() => setClicked(!clicked)}>
+          {clicked ? <p>I've been clicked!</p> : <p>Click me!</p>}
         </div>
         <div className="Portal">
           <p>About</p>
