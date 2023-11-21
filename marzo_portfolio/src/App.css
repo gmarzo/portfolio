@@ -57,11 +57,16 @@
 .Portal {
   display: flex;
   flex-direction: column;
+  align-items: center;
   height: 44vh;
   width: 18vw;
   background-color: #e6eeee;
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.Portal-title {
+  font-size: 30px;
 }
 
 .Banner-title {

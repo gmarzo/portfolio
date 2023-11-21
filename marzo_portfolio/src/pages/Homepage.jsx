@@ -13,17 +13,19 @@ const Homepage = () => {
       </div>
 
       <div className="Showcase">
+        <a href={"games"}>
+          <div className="Portal">
+            <p className="Portal-title">Game Projects</p>
+          </div>
+        </a>
         <div className="Portal">
-          <p>Game Projects</p>
-        </div>
-        <div className="Portal">
-          <p>Coding Projects</p>
+          <p className="Portal-title">Coding Projects</p>
         </div>
         <div className="Portal" onClick={() => setClicked(!clicked)}>
           {clicked ? <p>I've been clicked!</p> : <p>Click me!</p>}
         </div>
         <div className="Portal">
-          <p>About</p>
+          <p className="Portal-title">About</p>
         </div>
       </div>
     </div>
