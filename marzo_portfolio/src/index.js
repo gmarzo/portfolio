@@ -4,6 +4,8 @@ import './index.css';
 import App from './App';
 import Homepage from './pages/Homepage'
 import GamesPage from './pages/GamesPage';
+import CodingPage from './pages/CodingPage'
+import AboutPage from './pages/AboutPage'
 import reportWebVitals from './reportWebVitals';
 
 import {createBrowserRouter, RouterProvider} from "react-router-dom"
@@ -16,6 +18,14 @@ const router = createBrowserRouter([
   {
     path: "games",
     element: <GamesPage />
+  },
+  {
+    path: "code",
+    element: <CodingPage />
+  },
+  {
+    path: "about",
+    element: <AboutPage />
   }
 ])
 

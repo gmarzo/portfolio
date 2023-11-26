@@ -1,6 +1,8 @@
 import * as React from "react";
 import "../App.css";
 
+import {Link} from "react-router-dom"
+
 
 const Homepage = () => {
   const [clicked, setClicked] = React.useState(false)
@@ -13,20 +15,28 @@ const Homepage = () => {
       </div>
 
       <div className="Showcase">
-        <a href={"games"}>
+        <Link to={"games"}>
           <div className="Portal">
             <p className="Portal-title">Game Projects</p>
+            <p>WIP</p>
           </div>
-        </a>
-        <div className="Portal">
-          <p className="Portal-title">Coding Projects</p>
-        </div>
+        </Link>
+        <Link to={"code"}>
+          <div className="Portal">
+            <p className="Portal-title">Coding Projects</p>
+            <p>WIP</p>
+          </div>
+        </Link>
+        
         <div className="Portal" onClick={() => setClicked(!clicked)}>
           {clicked ? <p>I've been clicked!</p> : <p>Click me!</p>}
         </div>
-        <div className="Portal">
-          <p className="Portal-title">About</p>
-        </div>
+        <Link to={"about"}>
+          <div className="Portal">
+            <p className="Portal-title">About</p>
+            <p>WIP</p>
+          </div>
+        </Link>  
       </div>
     </div>
   );

@@ -4,7 +4,14 @@ import '../App.css'
 const GamesPage = () => {
 
     return(
-        <div>Hello Games</div>
+        <div className="Games-Page">
+            <div className="Description">
+                <p className="Description-text">A collection of game projects that I've worked on.</p>
+            </div>
+            <div className="Showcase">
+                HI
+            </div>
+        </div>
     )
 }
 
