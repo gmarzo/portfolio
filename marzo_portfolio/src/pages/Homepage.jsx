@@ -2,7 +2,7 @@ import * as React from "react";
 import "../App.css";
 
 import {Link} from "react-router-dom"
-
+import {Paper} from "@mui/material"
 
 const Homepage = () => {
   const [clicked, setClicked] = React.useState(false)
@@ -15,28 +15,28 @@ const Homepage = () => {
       </div>
 
       <div className="Showcase">
-        <Link to={"games"}>
-          <div className="Portal">
-            <p className="Portal-title">Game Projects</p>
-            <p>WIP</p>
-          </div>
-        </Link>
-        <Link to={"code"}>
-          <div className="Portal">
-            <p className="Portal-title">Coding Projects</p>
-            <p>WIP</p>
-          </div>
-        </Link>
-        
-        <div className="Portal" onClick={() => setClicked(!clicked)}>
-          {clicked ? <p>I've been clicked!</p> : <p>Click me!</p>}
-        </div>
-        <Link to={"about"}>
-          <div className="Portal">
-            <p className="Portal-title">About</p>
-            <p>WIP</p>
-          </div>
-        </Link>  
+        <div className="Showcase-container">
+          <Link to={"games"}>
+            <Paper className="Portal" elevation={3}>
+              <p className="Portal-title">Game Projects</p>
+              <p>WIP</p>
+            </Paper>
+          </Link>
+
+          <Link to={"code"}>
+            <Paper className="Portal" elevation={3}>
+              <p className="Portal-title">Coding Projects</p>
+              <p>WIP</p>
+            </Paper>
+          </Link>
+          
+          <Link to={"about"}>
+            <Paper className="Portal" elevation={3}>
+              <p className="Portal-title">About</p>
+              <p>WIP</p>
+            </Paper>
+          </Link>
+        </div>  
       </div>
     </div>
   );
