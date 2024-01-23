@@ -33,7 +33,7 @@
   flex-direction: column;
   height: 100vh;
   width: 100vw;
-  background-color: #e6e6e6;
+  background: linear-gradient(#e6e6e6, #d6d6ff);
 }
 
 .Games-page {
@@ -47,7 +47,7 @@
 .Banner {
   display: flex;
   flex-direction: column;
-  height: 28%;
+  height: 25%;
   width: 100%;
   background-color: #3e3cd2;
   justify-content: center;
@@ -57,7 +57,7 @@
 .Showcase {
   display: flex;
   flex-direction: row;
-  height: 70%;
+  height: 75%;
   width: 100%;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -66,7 +66,7 @@
 .Showcase-container {
   display: flex;
   flex-direction: row;
-  height: 70%;
+  height: 100%;
   width: 60%;
   align-items: center;
   justify-content: space-evenly;
@@ -88,6 +88,7 @@
   justify-content: center;
   width: 80%;
   height: 100%;
+  overflow-y: auto
 }
 
 .Resume-container {
@@ -96,7 +97,6 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  width: 100%;
 }
 
 .Portal {
@@ -108,6 +108,10 @@
   color: #b0b0b6;
   margin-left: 2px;
   margin-right: 2px;
+}
+
+.Nav-bar {
+  height: 100%;
 }
 
 .Resume-img {

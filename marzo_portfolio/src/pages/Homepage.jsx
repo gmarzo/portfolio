@@ -1,7 +1,6 @@
 import * as React from "react";
-import "../App.css";
+import "../styles/App.css";
 
-import { Paper } from "@mui/material";
 import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import AboutPage from "./AboutPage";
@@ -44,34 +43,12 @@ const Homepage = () => {
           <title>Garrett Marzo</title>
         </Helmet>
         <div className="Banner">
-          <h1 className="Banner-title">Hello World</h1>
+          <h1 className="Banner-title">Hello, World!</h1>
           <h2 className="Banner-subtitle">My Name is Garrett</h2>
         </div>
 
         {/* Main Page switchable content */}
         <div className="Showcase">
-          {/* <div className="Showcase-container">
-            <Link to={"games"}>
-              <Paper className="Portal" elevation={3}>
-                <p className="Portal-title">Game Projects</p>
-                <p>WIP</p>
-              </Paper>
-            </Link>
-
-            <Link to={"code"}>
-              <Paper className="Portal" elevation={3}>
-                <p className="Portal-title">Coding Projects</p>
-                <p>WIP</p>
-              </Paper>
-            </Link>
-
-            <Link to={"about"}>
-              <Paper className="Portal" elevation={3}>
-                <p className="Portal-title">About</p>
-                <p>WIP</p>
-              </Paper>
-            </Link>
-          </div> */}
           <div className="Page-container">
             {Content ? (
               <Content
@@ -94,8 +71,7 @@ const Homepage = () => {
                 })
               }
             >
-              {" "}
-              Game Projects
+              {"Game Projects"}
             </h3>
 
             <h3

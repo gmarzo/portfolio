@@ -1,10 +1,6 @@
 import * as React from "react";
-import "../App.css";
+import "../styles/App.css";
 import resume from "../images/resume.jpg";
-import MarzoResume from "../images/MarzoResume.pdf";
-
-import { Document, Page } from "react-pdf";
-
 import { Paper } from "@mui/material";
 
 const ResumePage = () => {
