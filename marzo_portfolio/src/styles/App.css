@@ -39,15 +39,15 @@
 .Games-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   background-color: #ffffff;
 }
 
 .Banner {
   display: flex;
-  flex-direction: column;
-  height: 25%;
+  flex-direction: row;
+  height: 15%;
   width: 100%;
   background-color: #3e3cd2;
   justify-content: center;
@@ -57,7 +57,7 @@
 .Showcase {
   display: flex;
   flex-direction: row;
-  height: 75%;
+  height: 85%;
   width: 100%;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -124,15 +124,16 @@
 }
 
 .Banner-title {
-  font-size: 10vh;
+  font-size: 7vh;
   color: white;
-  margin-bottom: 1px;
+  margin-bottom: 15px;
 }
 
 .Banner-subtitle {
   font-size: 4vh;
   color: white;
   margin-top: 3px;
+  margin-left: 5px;
 }
 
 .Description {
@@ -152,7 +153,17 @@
 .Page-setter {
   color: #ececec;
   font-family: "Times New Roman";
-  font-size: 2em;
+  font-size: 2.5em;
+  margin-left: 15px;
+}
+
+.Page-setter-button {
+  border: none;
+  background-color: inherit;
+}
+
+.Page-setter-button:hover {
+  text-decoration: underline solid white;
 }
 
 @keyframes App-logo-spin {

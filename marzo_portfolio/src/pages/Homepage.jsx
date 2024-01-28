@@ -36,6 +36,7 @@ const Homepage = () => {
   const [state, dispatch] = React.useReducer(reducer, initialState);
 
   const Content = contentMapping[state.page];
+
   return (
     <div className="Landing-page">
       <HelmetProvider>
@@ -43,8 +44,8 @@ const Homepage = () => {
           <title>Garrett Marzo</title>
         </Helmet>
         <div className="Banner">
-          <h1 className="Banner-title">Hello, World!</h1>
-          <h2 className="Banner-subtitle">My Name is Garrett</h2>
+          <h1 className="Banner-title">Hello, World! My name is Garrett.</h1>
+          {/* <h2 className="Banner-subtitle">My Name is Garrett</h2> */}
         </div>
 
         {/* Main Page switchable content */}
@@ -62,54 +63,63 @@ const Homepage = () => {
           </div>
           {/* Side Navigation Bar */}
           <div className="Nav-container">
-            <h3
-              className="Page-setter"
-              onClick={() =>
-                dispatch({
-                  type: PAGE_ACTIONS.SET_PAGE,
-                  payload: { page: "games" },
-                })
-              }
-            >
-              {"Game Projects"}
-            </h3>
+            <button className="Page-setter-button">
+              <h3
+                className="Page-setter"
+                onClick={() =>
+                  dispatch({
+                    type: PAGE_ACTIONS.SET_PAGE,
+                    payload: { page: "games" },
+                  })
+                }
 
-            <h3
-              className="Page-setter"
-              onClick={() =>
-                dispatch({
-                  type: PAGE_ACTIONS.SET_PAGE,
-                  payload: { page: "coding" },
-                })
-              }
-            >
-              {" "}
-              Coding Projects
-            </h3>
+              >
+                {"Game Projects"}
+              </h3>
+            </button>
 
-            <h3
-              className="Page-setter"
-              onClick={() =>
-                dispatch({
-                  type: PAGE_ACTIONS.SET_PAGE,
-                  payload: { page: "about" },
-                })
-              }
-            >
-              About Me
-            </h3>
+            <button className="Page-setter-button">
+              <h3
+                className="Page-setter"
+                onClick={() =>
+                  dispatch({
+                    type: PAGE_ACTIONS.SET_PAGE,
+                    payload: { page: "coding" },
+                  })
+                }
+              >
+                {" "}
+                Coding Projects
+              </h3>
+            </button>
 
-            <h3
-              className="Page-setter"
-              onClick={() =>
-                dispatch({
-                  type: PAGE_ACTIONS.SET_PAGE,
-                  payload: { page: "resume" },
-                })
-              }
-            >
-              Resume
-            </h3>
+            <button className="Page-setter-button">
+              <h3
+                className="Page-setter"
+                onClick={() =>
+                  dispatch({
+                    type: PAGE_ACTIONS.SET_PAGE,
+                    payload: { page: "about" },
+                  })
+                }
+              >
+                About Me
+              </h3>
+            </button>
+
+            <button className="Page-setter-button">
+              <h3
+                className="Page-setter"
+                onClick={() =>
+                  dispatch({
+                    type: PAGE_ACTIONS.SET_PAGE,
+                    payload: { page: "resume" },
+                  })
+                }
+              >
+                Resume
+              </h3>
+            </button>
           </div>
         </div>
       </HelmetProvider>
