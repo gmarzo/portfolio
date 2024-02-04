@@ -31,7 +31,7 @@
 .Landing-page {
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 100%;
   width: 100vw;
   background: linear-gradient(#e6e6e6, #d6d6ff);
 }
@@ -47,7 +47,7 @@
 .Banner {
   display: flex;
   flex-direction: row;
-  height: 15%;
+  height: 100vh;
   width: 100%;
   background-color: #3e3cd2;
   justify-content: center;
@@ -57,7 +57,7 @@
 .Showcase {
   display: flex;
   flex-direction: row;
-  height: 85%;
+  height: 100vh;
   width: 100%;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -88,7 +88,7 @@
   justify-content: center;
   width: 80%;
   height: 100%;
-  overflow-y: auto
+  overflow-y: auto;
 }
 
 .Resume-container {
@@ -119,6 +119,16 @@
   max-height: 100%;
 }
 
+.contact {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: #dddddd;
+  color: #707070;
+  height: 7vh;
+}
+
 .Portal-title {
   font-size: 30px;
 }
@@ -127,6 +137,7 @@
   font-size: 7vh;
   color: white;
   margin-bottom: 15px;
+  animation: fade-in 5s;
 }
 
 .Banner-subtitle {
@@ -185,3 +196,12 @@
     width: 22vw;
   }
 } */
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 100;
+  }
+}

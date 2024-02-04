@@ -72,7 +72,6 @@ const Homepage = () => {
                     payload: { page: "games" },
                   })
                 }
-
               >
                 {"Game Projects"}
               </h3>
@@ -121,6 +120,10 @@ const Homepage = () => {
               </h3>
             </button>
           </div>
+        </div>
+        <div className="contact">
+          <p>garrett.marzo@gmail.com</p>
+          <p>(310) 612-0159</p>
         </div>
       </HelmetProvider>
     </div>
