@@ -46,7 +46,7 @@
 
 .Banner {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   height: 100vh;
   width: 100%;
   background-color: #3e3cd2;
@@ -126,6 +126,7 @@
   align-items: center;
   background-color: #dddddd;
   color: #707070;
+  border:2px, solid, #282c34;
   height: 7vh;
 }
 
@@ -137,7 +138,7 @@
   font-size: 7vh;
   color: white;
   margin-bottom: 15px;
-  animation: fade-in 5s;
+  animation: fade-in 3s;
 }
 
 .Banner-subtitle {
@@ -174,6 +175,27 @@
 }
 
 .Page-setter-button:hover {
+  text-decoration: underline solid white;
+}
+
+.content-scroll {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 4.5em;
+  width: 8em;
+  animation: fade-in 3s;
+  margin-top: 2%
+}
+
+.scroll-title {
+  color: white;
+  font-size: 1.1em;
+  font-weight: bolder;
+}
+
+.content-scroll:hover {
   text-decoration: underline solid white;
 }
 
