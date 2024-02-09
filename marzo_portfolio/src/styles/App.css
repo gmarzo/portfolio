@@ -49,7 +49,7 @@
   flex-direction: column;
   height: 100vh;
   width: 100%;
-  background-color: #3e3cd2;
+  background: radial-gradient(#0040a4, #0090a4);
   justify-content: center;
   align-items: center;
 }
@@ -57,7 +57,7 @@
 .Showcase {
   display: flex;
   flex-direction: row;
-  height: 100vh;
+  height: 93vh;
   width: 100%;
   align-items: flex-start;
   justify-content: space-evenly;
@@ -77,7 +77,7 @@
   flex-direction: column;
   justify-content: space-evenly;
   align-items: flex-start;
-  background-color: blue;
+  background: linear-gradient(#0034d5, #1832e0);
   height: 100%;
   width: 20%;
 }
@@ -126,7 +126,7 @@
   align-items: center;
   background-color: #dddddd;
   color: #707070;
-  border:2px, solid, #282c34;
+  border: 2px, solid, #282c34;
   height: 7vh;
 }
 
@@ -186,7 +186,7 @@
   height: 4.5em;
   width: 8em;
   animation: fade-in 3s;
-  margin-top: 2%
+  margin-top: 2%;
 }
 
 .scroll-title {
