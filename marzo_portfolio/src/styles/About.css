@@ -1,55 +1,60 @@
 .container {
-    display: flex;
-    flex-direction: column;
-    font-family: 'Times New Roman', Times, serif;
-    overflow-y: scroll;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(#e6e6e6, #d6d6ff)
+  display: flex;
+  flex-direction: column;
+  font-family: "Times New Roman", Times, serif;
+  overflow-y: scroll;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(#e6e6e6, #d6d6ff);
 }
 
 .content-container {
-    display: flex;
-    flex-direction: row;
+  display: flex;
+  flex-direction: row;
 }
 
 .Links-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    margin-top: 4%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 4%;
 }
 
 .section-title {
-    padding-left: 8%;
-    font-size: 24pt;
+  padding-left: 8%;
+  font-size: 24pt;
 }
 
 .section-content {
-    padding-left: 12%;
-    font-size: 16pt;
-    max-width: 80%;
-    line-height: 1.7em;
+  padding-left: 12%;
+  font-size: 16pt;
+  max-width: 80%;
+  line-height: 1.7em;
+  font-family: "Trebuchet MS";
+}
 
+.pfp {
+  height: 400;
+  width: 250;
 }
 
 .content-container:last-of-type {
-    padding-bottom: 100px;
+  padding-bottom: 100px;
 }
 
 .section-title:first-of-type {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 
 .link-page {
-    height: 200px;
-    width: 200px;
-    display: flex;
-    margin-left: 20px;
-    margin-right: 20px;
-    margin-bottom: 50px;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 50px;
 }
 
 #intro {
-    max-width: 60%
+  max-width: 60%;
 }

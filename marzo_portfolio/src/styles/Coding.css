@@ -9,10 +9,18 @@
   margin-top: 50px;
   height: 15%;
   width: 15%;
+  margin-bottom: 150px;
 }
 
 .gh-image {
   height: auto;
+}
+
+.page-title {
+  font-family: "Times New Roman";
+  font-size: 36pt;
+  font-weight: bolder;
+  margin-top: 3%;
 }
 
 .proj-display {
@@ -23,6 +31,10 @@
   margin-bottom: 6%;
 }
 
+.proj-display:first-of-type {
+  margin-top: 0%;
+}
+
 .proj-title {
   display: flex;
   flex-direction: row;
@@ -31,16 +43,18 @@
   margin-top: 5%;
   font-size: 32pt;
   font-weight: bolder;
+  background-color: #cecece;
 }
 
 .proj-desc {
   display: flex;
   flex-direction: row;
   align-items: center;
+  width: 100%;
 }
 
 .proj-gif {
-  height: 110%;
+  max-width: 60%;
   aspect-ratio: auto;
 }
 
@@ -49,6 +63,7 @@
   font-size: 20pt;
   margin-left: 2%;
   margin-right: 2%;
+  min-width: 40%;
 }
 
 .img-col {

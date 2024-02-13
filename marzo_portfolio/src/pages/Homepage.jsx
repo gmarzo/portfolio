@@ -48,14 +48,16 @@ const Homepage = () => {
         <section id="Landing">
           <div className="Banner">
             <h1 className="Banner-title">Hello, World! My name is Garrett.</h1>
-            <Paper onClick={() => {
-              window.scrollTo({
-                top: document.querySelector("#Content").offsetTop,
-                behavior: "smooth"
-              })
-            }}
-            className="content-scroll"
-            style={{backgroundColor: "#bb3900"}}>
+            <Paper
+              onClick={() => {
+                window.scrollTo({
+                  top: document.querySelector("#Content").offsetTop,
+                  behavior: "smooth",
+                });
+              }}
+              className="content-scroll"
+              style={{ backgroundColor: "#bb3900" }}
+            >
               <p className="scroll-title">Check it out!</p>
             </Paper>
           </div>
@@ -76,7 +78,7 @@ const Homepage = () => {
             </div>
             {/* Side Navigation Bar */}
             <div className="Nav-container">
-              <button className="Page-setter-button">
+              {/* <button className="Page-setter-button">
                 <h3
                   className="Page-setter"
                   onClick={() =>
@@ -88,7 +90,7 @@ const Homepage = () => {
                 >
                   {"Game Projects"}
                 </h3>
-              </button>
+              </button> */}
 
               <button className="Page-setter-button">
                 <h3
@@ -101,7 +103,7 @@ const Homepage = () => {
                   }
                 >
                   {" "}
-                  Coding Projects
+                  Projects
                 </h3>
               </button>
 
