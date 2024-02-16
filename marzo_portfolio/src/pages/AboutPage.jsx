@@ -26,7 +26,9 @@ const AboutPage = () => {
           &emsp;&emsp;I want to hone my skills as a software developer and
           programmer, and turn the passion I've found into a career.
         </p>
-        <Paper style={{ height: 300, width: 175, marginLeft: 50 }}>
+        <Paper
+          style={{ height: 300, width: 300, marginLeft: 20, marginTop: 30 }}
+        >
           <img src={selfie} alt="" className="pfp" />
         </Paper>
       </div>
