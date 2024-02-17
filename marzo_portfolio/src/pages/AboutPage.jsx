@@ -16,7 +16,7 @@ const AboutPage = () => {
       <div className="content-container">
         <p className="section-content" id="intro">
           &emsp;&emsp;My name is Garrett Marzo. I'm a Software Developer that
-          graduted with a Bachelor's Degree in Computer Science from Loyola
+          graduated with a Bachelor's Degree in Computer Science from Loyola
           Marymout University. Attending LMU is where I first learned and grew a
           love for programming, and in my time since beginning I've grown enough
           to be able to help instruct my juniors and peers as a tutor, develop
