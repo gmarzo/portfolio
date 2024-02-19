@@ -108,6 +108,9 @@ const CodingPage = () => {
           </p>
         </div>
       </div>
+
+      <div className="proj-display">Display for mapbox</div>
+
       <p style={{ fontFamily: "Trebuchet MS", fontSize: "26pt" }}>
         See my other coursework on GitHub!
       </p>
