@@ -80,6 +80,14 @@ const AboutPage = () => {
         </p>
       </div>
 
+      <h2 className="section-title">More about me</h2>
+      <div className="content-container">
+        <p className="section-content">
+          &emsp;&emsp;The year was 1987, my very first case. My very first love. 
+          I was kicked out of the court for kissing the prosecutor.
+        </p>
+      </div>
+
       <div className="Links-container">
         <Paper
           elevation={5}
