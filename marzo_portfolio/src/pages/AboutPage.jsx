@@ -80,13 +80,21 @@ const AboutPage = () => {
         </p>
       </div>
 
+      <h2 className="section-title">More about me</h2>
+      <div className="content-container">
+        <p className="section-content">
+          &emsp;&emsp;The year was 1987, my very first case. My very first love. 
+          I was kicked out of the court for kissing the prosecutor.
+        </p>
+      </div>
+
       <div className="Links-container">
         <Paper
           elevation={5}
           className="link-page"
           style={{ backgroundColor: "#404040" }}
         >
-          <a href="https://github.com/gmarzo">
+          <a href="https://github.com/gmarzo" target="_blank" rel="noreferrer">
             <img src={gh} alt="" style={{ height: 200, width: 200 }} />
           </a>
         </Paper>
@@ -96,7 +104,7 @@ const AboutPage = () => {
           className="link-page"
           style={{ backgroundColor: "#ececec" }}
         >
-          <a href="https://www.linkedin.com/in/garrett-marzo-a1315418b/">
+          <a href="https://www.linkedin.com/in/garrett-marzo-a1315418b/" target="_blank" rel="noreferrer">
             <img src={lk} alt="" style={{ height: 200, width: 200 }} />
           </a>
         </Paper>

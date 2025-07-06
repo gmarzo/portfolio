@@ -20,6 +20,7 @@ const CodingPage = () => {
           <a
             href="https://github.com/gmarzo/coursework/tree/main/Intro%20to%20Artificial%20Intelligence/lmu-cmsi3300-fall2022-homework3-gmarzo_hw3/src"
             target="_blank"
+            rel="noreferrer"
           >
             Pacman Agent
           </a>
@@ -40,6 +41,7 @@ const CodingPage = () => {
           <a
             href="https://github.com/gmarzo/coursework/tree/main/Computer%20Graphics/our-own-3d-library-hexed-vortex-graphic"
             target="_blank"
+            rel="noreferrer"
           >
             Hexed Vortex Graphic
           </a>
@@ -57,7 +59,7 @@ const CodingPage = () => {
       </div>
       <div className="proj-display">
         <h1 className="proj-title">
-          <a href="https://github.com/jasoncd31/Fragment-Game" target="_blank">
+          <a href="https://github.com/jasoncd31/Fragment-Game" target="_blank" rel="noreferrer">
             Fragment
           </a>
         </h1>
@@ -85,7 +87,7 @@ const CodingPage = () => {
       </div>
       <div className="proj-display">
         <h1 className="proj-title">
-          <a href="https://github.com/naratheman/PokerScript" target="_blank">
+          <a href="https://github.com/naratheman/PokerScript" target="_blank" rel="noreferrer">
             PokerScript
           </a>
         </h1>
@@ -101,6 +103,7 @@ const CodingPage = () => {
             <a
               href="https://naratheman.github.io/WebsitePokerScript/#"
               target="_blank"
+              rel="noreferrer"
             >
               here
             </a>
@@ -108,11 +111,14 @@ const CodingPage = () => {
           </p>
         </div>
       </div>
+
+      <div className="proj-display">Display for mapbox</div>
+
       <p style={{ fontFamily: "Trebuchet MS", fontSize: "26pt" }}>
         See my other coursework on GitHub!
       </p>
       <Tooltip title="https://github.com/gmarzo/coursework/" arrow>
-        <a href="https://github.com/gmarzo/coursework/" target="_blank">
+        <a href="https://github.com/gmarzo/coursework/" target="_blank" rel="noreferrer">
           <Paper className="portal">
             <img src={gh} alt="" />
           </Paper>
